@@ -24,15 +24,17 @@ const showProducts = (products) => {
       <div>
     <img class="product-image" src=${image}></img>
       </div>
-      <h3>${product.title}</h3>
+      <h3>${product.title?.slice(0, 20)}</h3>
       <p>Category: ${product.category}</p>
       <h2>Price: $ ${product.price}</h2>
-      <h4>Average Rating: ${product.rating.rate}</h4>
-      <h4>Total Rating: ${product.rating.count}</h4>
+      <h4>Review: ${product.rating.rate}</h4>
+      <h4>Total Ratings: ${product.rating.count}</h4>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-primary">add to cart</button>
-      <button id="details-btn" class="btn btn-ebuy-secondary" onclick="getId(${product.id})">Details</button>
+      <button id="details-btn" class="btn btn-secondary">Details</button>
+      
       </div>
       `;
+    /* <button id="details-btn" class="btn btn-ebuy-secondary" onclick="getId(${product.id})">Details</button> */
     document.getElementById("all-products").appendChild(div);
   }
 };
@@ -88,23 +90,28 @@ const updateTotal = () => {
 };
 loadProducts();
 
-const getId = id => {
+/* const getId = id => {
   const idNumber = id;
   fetch(`https://fakestoreapi.com/products/${idNumber}`)
     .then(res => res.json())
     .then(data => disPlaySingleItemsDetail(data));
-}
+} */
 
-const disPlaySingleItemsDetail = data => {
+/* const disPlaySingleItemsDetail = data => {
   const divContainer = document.getElementById('single-item');
   const div = document.createElement('div');
   divContainer.innerHTML = '';
   // div.classList.add('w-50', 'mx-auto', 'single-product');
   div.innerHTML = `
-   <h3>Product${data.title}</h3>
-   <p>Product Description: ${data.description}</p>
+   <div class="card">
+  <img src="${data.image}" class="card-img-top" alt="...">
+  <div class="card-body">
+  <h3>Product${data.title}</h3>
+  <p>Product Description: ${data.description}</p>
+  </div>
+</div>
    `;
   divContainer.appendChild(div);
   console.log(data)
-}
+} */
 

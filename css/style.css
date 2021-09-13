@@ -1,12 +1,16 @@
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
-.search-field {
+/* .search-item-field {
+  border-radius: 25px 0 0 25px;
+  padding: 0 25px;
   border: none;
-  border-radius: 0px;
-  /* padding: 5px; */
-  outline: none;
+  outline: none; 
+  width: 340px;
+  height: 50px; 
+  background: #fff;
 }
 .search-field:hover {
   outline: none;
@@ -14,37 +18,28 @@ body {
 }
 .search-box {
   border: 1px solid rgb(3, 118, 211);
-  /* width: 50%; */
+  width: 500px;
+  border-radius: 5px;
   margin: auto;
   margin-top: 50px;
-  border-radius: 15px;
-  border-right: none;
+  border-right: none; 
+  margin-top: 50px
 }
-.search-box input,button{
-  /* width: 75%; */
-  border: 1px solid white;
-  border-radius: 10px;
-  border-right: 0px;
-  /* font-size: 18px; */
-  padding: 12px;
-  color: white;
-}
-/* .search-box button {
-  width: 25%;
-  background-color: #7094f7;
-  color: white;
-  border-left: 0px;
-  padding: 10px 10px;
-  /* border-radius: 10px  0px 10px; */
-  /* margin-left: 180px; */
-  /* float: right;
-} */ 
+.search-button {
+  display: inline-block;
+  padding: 10px 50px;
+  border-radius: 25px;
+  margin-left: 20px;
+  float: right;
+} */
 .btn-ebuy-secondary{
   background-color: chartreuse;
 }
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   /* border: 1px solid black; */
   text-align: center;
   width: 100%;
@@ -53,9 +48,11 @@ body {
   justify-content: center;
 }
 .single-product {
+  width: 100%;
   padding: 10px;
-  transition: 0.6s;
-  height: 500px;
+  transition: 0.3s;
+  height: 450px;
+  background-color: rgba(153, 153, 153, 0.137);
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
