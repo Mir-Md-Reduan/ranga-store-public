@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FakeStore</title>
+  <title>EbuyStore</title>
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -23,23 +23,33 @@
     <!-- search field start  -->
     <div class="search-field">
       <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
+        <input id="input-field" class="search-field" type="text" placeholder="Search Item" />
+        <button type="button" class=" search-button" data-toggle="button" aria-pressed="false" autocomplete="off"
+          id="search-btn" onclick="loadProducts()">
           Search
         </button>
       </div>
     </div>
     <!-- search field end  -->
+    <!-- single item display start  -->
+    <div class="container w-50 mx-auto">
+      <div id="single-item">
+      </div>
+    </div>
+    <!-- single item display end -->
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
+        <!-- all products start -->
         <div id="all-products" class="">
-          <!-- <h1></h1> -->
         </div>
+        <!-- all products end  -->
       </div>
+      <!-- My chart Start  -->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div class="cart" id="my-cart">
+          <!-- chart table start  -->
           <table class="table">
+            <!-- chart table heading start  -->
             <thead>
               <h1>My-Cart</h1>
               <tr>
@@ -49,6 +59,8 @@
                 <th scope="col"></th>
               </tr>
             </thead>
+            <!-- chart table heading end  -->
+            <!-- chart table Body start  -->
             <tbody>
               <tr>
                 <th>Total Added-Products:</th>
@@ -80,12 +92,15 @@
                 <td></td>
               </tr>
             </tbody>
+            <!-- chart table body end  -->
           </table>
+          <!-- chart table end  -->
           <div class="parces text-center">
             <button class="btn btn-primary text-center">Buy Now</button>
           </div>
         </div>
       </div>
+      <!-- My chart End  -->
     </div>
   </main>
   <footer></footer>
