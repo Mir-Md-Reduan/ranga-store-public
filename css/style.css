@@ -1,46 +1,12 @@
 body {
-  /* overflow-x: hidden; */
   font-family: "Montserrat", sans-serif;
   margin: 0;
-}
-/* .search-item-field {
-  border-radius: 25px 0 0 25px;
-  padding: 0 25px;
-  border: none;
-  outline: none; 
-  width: 340px;
-  height: 50px; 
-  background: #fff;
-}
-.search-field:hover {
-  outline: none;
-  border: none;
-}
-.search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 500px;
-  border-radius: 5px;
-  margin: auto;
-  margin-top: 50px;
-  border-right: none; 
-  margin-top: 50px
-}
-.search-button {
-  display: inline-block;
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
-  float: right;
-} */
-.btn-ebuy-secondary{
-  background-color: chartreuse;
 }
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
@@ -65,7 +31,6 @@ body {
 }
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
@@ -82,7 +47,6 @@ body {
   }
   .cart {
     width: 300px;
-    /* border: 1px solid green; */
     padding: 10px;
     box-shadow: 10px 10px 20px gray;
     border-radius: 5px;
